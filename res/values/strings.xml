@@ -949,7 +949,7 @@
     <string name="size_80_mb">80mb</string>
     <string name="size_100_mb">100mb</string>
 
-    <!-- less notification sounds -->
+    <!-- less notification sounds  -->
     <string name="default_behavior">Default behavior</string>
 
     <!-- signal style -->
