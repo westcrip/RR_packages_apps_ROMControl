@@ -52,7 +52,6 @@ public class AOKPPreferenceFragment extends PreferenceFragment implements Dialog
     protected boolean hasFastCharge;
     protected boolean hasColorTuning;
     protected boolean hasVibration = false;
-    protected ContentResolver mContentRes;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -63,7 +62,6 @@ public class AOKPPreferenceFragment extends PreferenceFragment implements Dialog
         hasColorTuning = getResources().getBoolean(R.bool.has_color_tuning);
         mContext = getActivity();
         mActionBar = getActivity().getActionBar();
-        mContentRes = getActivity().getContentResolver();
         if(getArguments() != null) {
             mShortcutFragment = getArguments().getBoolean("started_from_shortcut", false);
         }

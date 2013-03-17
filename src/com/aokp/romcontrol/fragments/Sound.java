@@ -52,13 +52,15 @@ public class Sound extends AOKPPreferenceFragment
         prefs = PreferenceManager.getDefaultSharedPreferences(mContext);
 
         mEnableVolumeOptions = (CheckBoxPreference) findPreference(PREF_ENABLE_VOLUME_OPTIONS);
-        mEnableVolumeOptions.setChecked(Settings.System.getBoolean(mContentRes,
+        mEnableVolumeOptions.setChecked(Settings.System.getBoolean(getActivity()
+                .getContentResolver(),
                 Settings.System.ENABLE_VOLUME_OPTIONS, false));
 
         mAnnoyingNotifications = (ListPreference) findPreference(PREF_LESS_NOTIFICATION_SOUNDS);
         mAnnoyingNotifications.setOnPreferenceChangeListener(this);
-        mAnnoyingNotifications.setValue(Integer.toString(Settings.System.getInt(mContentRes,
-                Settings.System.MUTE_ANNOYING_NOTIFICATIONS_THRESHOLD, 0)));
+        mAnnoyingNotifications.setValue(Integer.toString(Settings.System.getInt(getActivity()
+                .getContentResolver(), Settings.System.MUTE_ANNOYING_NOTIFICATIONS_THRESHOLD,
+                0)));
 
         mFlipAction = (ListPreference) findPreference(PREF_FLIP_ACTION);
         mFlipAction.setOnPreferenceChangeListener(this);
@@ -91,7 +93,7 @@ public class Sound extends AOKPPreferenceFragment
         if (preference == mEnableVolumeOptions) {
 
             boolean checked = ((CheckBoxPreference) preference).isChecked();
-            Settings.System.putBoolean(mContentRes,
+            Settings.System.putBoolean(getActivity().getContentResolver(),
                     Settings.System.ENABLE_VOLUME_OPTIONS, checked);
             return true;
 
@@ -134,7 +136,7 @@ public class Sound extends AOKPPreferenceFragment
 
         } else if (preference == mAnnoyingNotifications) {
             int val = Integer.parseInt((String) newValue);
-            Settings.System.putInt(mContentRes,
+            Settings.System.putInt(getActivity().getContentResolver(),
                     Settings.System.MUTE_ANNOYING_NOTIFICATIONS_THRESHOLD, val);
             return true;
 
