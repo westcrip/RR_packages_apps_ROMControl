@@ -785,4 +785,38 @@
     <string name="show_with_dbm">DBm olarak göster</string>
     <string name="toggles_enable_haptic_feedback_title">Dokunsal Geri Bildirimi Etkinleştir</string>
     <string name="toggles_enable_haptic_feedback_summary">Kısayollara tıklandığında dokunsal geri bildirim kullanın</string>
+      <!-- dynamic changelog -->
+    <string name="dynamic_changelog_title">Dinamik ChangeLog</string>
+    <string name="dynamic_changelog_summary">geçerli değişiklikler github dan senkronizedir</string>
+    <string name="dynamic_changelog_cat_title">Değişiklikler</string>
+    <string name="changelog_menu_projects_title">proje eğişimini göster</string>
+    <string name="changelog_menu_commitlog_title">yeni commits leri göster</string>
+    <string name="button_close">Kapat</string>
+    <string name="button_webview">WebView</string>
+    <string name="commit_extended_info_title">Commit bilgileri</string>
+    <string name="commit_message">Commit Mesaj</string>
+    <string name="commit_date">Commit Tarih</string>
+    <string name="commit_sha">Commit SHA-1 Hash</string>
+    <string name="next_commits_page_title">More\u2026</string>
+    <string name="next_commits_page_summary">\u2026display next 30 commits</string>
+    <string name="loading_commits">Loading commits\u2026</string>
+    <string name="commits_title">Commiter</string>
+    <string name="loading_projects">proje yükleme listesi\u2026</string>
+    <string name="org_projects">Organizasyon projesi</string>
+    <string name="author_title">Yapımcı</string>
+    <string name="commit_committer_title">Committer</string>
+    <string name="sort_commits_title">Sort</string>
+    <string name="sort_commits_message">Commits are now in order by repository, would you like to sort them by date regardless of which repository in which they exist?</string>
+    <string name="button_sort">günü sırala</string>
+    <string name="button_donot_sort">sınıflandırma yapma</string>
+    <string name="unknown_author">Bilinmeyen Yapımcı</string>
+    <string name="unknown_committer">Bilinmeyen Committer</string>
+    <string name="toast_commitlog_info" formatted="false">Found %d commits in %d seconds</string>
+    <string name="changelog_favorite_cat_title">Favori Projeler</string>
+    <string name="changelog_add_to_favs_list">ekle</string>
+    <string name="changelog_view_commits">commit leri görüntüle  </string>
+    <string name="add_favs_or_view">Favorilere ekle veya görüntüle ?</string>
+    <string name="remove_favs_or_view">favorilerden kaldır veya görüntüle?</string>
+    <string name="changelog_remove_from_favs_list">Kaldır</string>
+
 </resources>
